@@ -21,12 +21,11 @@ setTimeout(inserisci, 3000);  //Inserisco intervallo dopo il quale far apparire 
 // FUNZIONI
 function inserisci() {
     for (var i = 0; i < 5; i++) {
-        var arrayUtente = [];
         var numero = parseInt(prompt('Inserisci un numero fra 0 e 99'));
     }
-    if (numero[i] == numeroPc[i]) {
+    if (arrayCasuali.includes(numero)) {
         arrayUtente.push(numero);
-        alert('Hai indovinato' + arrayUtente.lenght + 'numeri:' + arrayUtente);
+        alert('Hai indovinato ' + arrayUtente.lenght + ' numeri:' + ' ' + arrayUtente);
     } else {
         alert('Non hai indovinato nessun numero');
     }
