@@ -24,10 +24,13 @@ function inserisci() {
         var numero = parseInt(prompt('Inserisci un numero fra 0 e 99'));
         if (arrayCasuali.includes(numero)) {
             arrayUtente.push(numero);
-            alert('Hai indovinato ' + arrayUtente.length + ' numeri:' + ' ' + arrayUtente);
-        } else {
-            alert('Non hai indovinato nessun numero');
         }
+    }
+    if (arrayUtente.length > 0) {
+        alert('Hai indovinato ' + arrayUtente.length + ' numeri:' + ' ' + arrayUtente);
+    } else {
+        alert('Non hai indovinato nessun numero');
+
     }
     console.log(arrayUtente);
 }
